@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Management</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#0d1117;
+    color:white;
+}
+
+.header{
+    background:#161b22;
+    color:#00ffff;
+    padding:20px;
+    text-align:center;
+    font-size:28px;
+}
+
+.container{
+    width:90%;
+    margin:30px auto;
+}
+
+.top{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+
+button{
+    background:#00bcd4;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0097a7;
+}
+
+input{
+    padding:10px;
+    width:250px;
+    border-radius:5px;
+    border:none;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#00bcd4;
+    color:white;
+    padding:12px;
+}
+
+td{
+    padding:12px;
+    text-align:center;
+    border:1px solid #333;
+}
+
+.edit{
+    background:orange;
+}
+
+.delete{
+    background:red;
+}
+
+.back{
+    margin-top:25px;
+    text-align:center;
+}
+
+.back a{
+    text-decoration:none;
+    color:white;
+    background:#00bcd4;
+    padding:12px 25px;
+    border-radius:8px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+👥 User Management
+</div>
+
+<div class="container">
+
+<div class="top">
+
+<input type="text" placeholder="🔍 Search User">
+
+<button>➕ Add User</button>
+
+</div>
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Email</th>
+<th>Role</th>
+<th>Status</th>
+<th>Actions</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Sasi Rekha</td>
+<td>sasi@example.com</td>
+<td>Admin</td>
+<td>Active</td>
+<td>
+<button class="edit">Edit</button>
+<button class="delete">Delete</button>
+</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Rahul</td>
+<td>rahul@example.com</td>
+<td>User</td>
+<td>Active</td>
+<td>
+<button class="edit">Edit</button>
+<button class="delete">Delete</button>
+</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Priya</td>
+<td>priya@example.com</td>
+<td>User</td>
+<td>Inactive</td>
+<td>
+<button class="edit">Edit</button>
+<button class="delete">Delete</button>
+</td>
+</tr>
+
+</table>
+
+<div class="back">
+<a href="/admin-dashboard">⬅ Back to Dashboard</a>
+</div>
+
+</div>
+
+</body>
+</html>

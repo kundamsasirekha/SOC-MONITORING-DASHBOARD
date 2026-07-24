@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0d1117;
+color:white;
+}
+
+.sidebar{
+position:fixed;
+left:0;
+top:0;
+width:230px;
+height:100%;
+background:#161b22;
+box-shadow:0 0 10px cyan;
+}
+
+.sidebar h2{
+text-align:center;
+padding:20px;
+color:cyan;
+}
+
+.sidebar a{
+display:block;
+padding:15px 20px;
+color:white;
+text-decoration:none;
+font-size:18px;
+}
+
+.sidebar a:hover{
+background:cyan;
+color:black;
+}
+
+.main{
+margin-left:230px;
+padding:20px;
+}
+
+.header{
+background:#161b22;
+padding:20px;
+text-align:center;
+font-size:28px;
+color:#00ffff;
+border-radius:10px;
+box-shadow:0 0 10px cyan;
+margin-bottom:20px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+margin-bottom:20px;
+}
+
+.card{
+background:#161b22;
+padding:20px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 0 10px cyan;
+}
+
+.card h2{
+color:cyan;
+font-size:18px;
+margin-bottom:10px;
+}
+
+.card p{
+font-size:30px;
+font-weight:bold;
+}
+
+.chart{
+background:#161b22;
+padding:20px;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:#161b22;
+}
+
+th{
+background:cyan;
+color:black;
+padding:12px;
+}
+
+td{
+padding:12px;
+border:1px solid gray;
+text-align:center;
+}
+
+.logout{
+margin-top:30px;
+text-align:center;
+}
+
+.logout a{
+background:red;
+padding:12px 25px;
+color:white;
+text-decoration:none;
+border-radius:8px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>🔐 SOC</h2>
+
+<a href="/admin-dashboard">🏠 Dashboard</a>
+<a href="/users">👥 Users</a>
+<a href="/logs">📋 Logs</a>
+<a href="/alerts">🚨 Alerts</a>
+<a href="/analytics">📊 Analytics</a>
+<a href="/settings">⚙ Settings</a>
+<a href="/logout">🚪 Logout</a>
+
+</div>
+
+<div class="main">
+
+<div class="header">
+🔐 Security Operations Center (SOC) Monitoring Dashboard
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h2>Total Events</h2>
+<p>1245</p>
+</div>
+
+<div class="card">
+<h2>Critical Alerts</h2>
+<p>18</p>
+</div>
+
+<div class="card">
+<h2>High Risk</h2>
+<p>42</p>
+</div>
+
+<div class="card">
+<h2>Active Devices</h2>
+<p>156</p>
+</div>
+
+</div>
+
+<div class="chart">
+<canvas id="chart"></canvas>
+</div>
+
+<table>
+
+<tr>
+<th>Time</th>
+<th>Source IP</th>
+<th>Attack Type</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>10:10 AM</td>
+<td>192.168.1.10</td>
+<td>Brute Force</td>
+<td>Blocked</td>
+</tr>
+
+<tr>
+<td>11:45 AM</td>
+<td>172.16.5.8</td>
+<td>SQL Injection</td>
+<td>Blocked</td>
+</tr>
+
+<tr>
+<td>01:20 PM</td>
+<td>10.0.0.15</td>
+<td>Malware</td>
+<td>Investigating</td>
+</tr>
+<tr>
+<td>03:00 PM</td>
+<td>192.168.10.5</td>
+<td>DDoS</td>
+<td>Mitigated</td>
+</tr>
+
+<tr>
+<td>05:45 PM</td>
+<td>172.16.20.8</td>
+<td>Phishing</td>
+<td>Blocked</td>
+</tr>
+
+</table>
+
+
+<script>
+
+new Chart(document.getElementById("chart"),{
+
+type:"bar",
+
+data:{
+
+labels:["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],
+
+datasets:[{
+
+label:"Security Alerts",
+
+data:[12,18,10,25,30,15,20],
+
+backgroundColor:[
+"#00FFFF",
+"#00BCD4",
+"#4CAF50",
+"#FFC107",
+"#FF5722",
+"#9C27B0",
+"#3F51B5"
+],
+
+borderWidth:1
+
+}]
+
+},
+
+options:{
+
+responsive:true,
+
+plugins:{
+legend:{
+labels:{
+color:"white"
+}
+}
+},
+
+scales:{
+
+x:{
+ticks:{
+color:"white"
+}
+},
+
+y:{
+ticks:{
+color:"white"
+}
+}
+
+}
+
+}
+
+});
+
+</script>
+
+</body>
+</html>

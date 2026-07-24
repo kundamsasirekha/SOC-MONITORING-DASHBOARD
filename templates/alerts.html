@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Security Alerts</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0d1117;
+color:white;
+}
+
+.header{
+background:#161b22;
+padding:20px;
+text-align:center;
+font-size:28px;
+color:cyan;
+}
+
+.container{
+width:90%;
+margin:30px auto;
+}
+
+.alert{
+padding:18px;
+margin:15px 0;
+border-radius:8px;
+font-size:18px;
+}
+
+.critical{
+background:#8B0000;
+}
+
+.high{
+background:#d35400;
+}
+
+.medium{
+background:#b7950b;
+}
+
+.low{
+background:#145A32;
+}
+
+.back{
+text-align:center;
+margin-top:30px;
+}
+
+.back a{
+text-decoration:none;
+background:#00bcd4;
+color:white;
+padding:12px 25px;
+border-radius:8px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+🚨 Security Alerts
+</div>
+
+<div class="container">
+
+<div class="alert critical">
+🔴 Critical Alert - SQL Injection Attempt Detected
+</div>
+
+<div class="alert high">
+🟠 High Alert - Multiple Failed Login Attempts
+</div>
+
+<div class="alert medium">
+🟡 Medium Alert - Malware Signature Found
+</div>
+
+<div class="alert low">
+🟢 Low Alert - Suspicious Login Location
+</div>
+
+<div class="back">
+<a href="/admin-dashboard">⬅ Back to Dashboard</a>
+</div>
+
+</div>
+
+</body>
+</html>

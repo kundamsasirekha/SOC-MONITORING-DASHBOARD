@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Security Logs</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0d1117;
+color:white;
+}
+
+.header{
+background:#161b22;
+padding:20px;
+text-align:center;
+font-size:28px;
+color:cyan;
+}
+
+.container{
+width:95%;
+margin:30px auto;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th{
+background:cyan;
+color:black;
+padding:12px;
+}
+
+td{
+padding:12px;
+border:1px solid #333;
+text-align:center;
+}
+
+.safe{
+color:#00ff00;
+font-weight:bold;
+}
+
+.danger{
+color:red;
+font-weight:bold;
+}
+
+.medium{
+color:orange;
+font-weight:bold;
+}
+
+.back{
+text-align:center;
+margin-top:30px;
+}
+
+.back a{
+background:#00bcd4;
+color:white;
+padding:12px 25px;
+text-decoration:none;
+border-radius:8px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+📋 Security Event Logs
+</div>
+
+<div class="container">
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>Date</th>
+<th>Time</th>
+<th>IP Address</th>
+<th>Attack</th>
+<th>Severity</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>23-07-2026</td>
+<td>10:15 AM</td>
+<td>192.168.1.10</td>
+<td>Brute Force</td>
+<td class="danger">High</td>
+<td>Blocked</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>23-07-2026</td>
+<td>11:05 AM</td>
+<td>172.16.10.5</td>
+<td>SQL Injection</td>
+<td class="danger">Critical</td>
+<td>Blocked</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>23-07-2026</td>
+<td>12:30 PM</td>
+<td>10.0.0.21</td>
+<td>Malware</td>
+<td class="medium">Medium</td>
+<td>Investigating</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>23-07-2026</td>
+<td>02:00 PM</td>
+<td>192.168.10.15</td>
+<td>Normal Login</td>
+<td class="safe">Low</td>
+<td>Allowed</td>
+</tr>
+
+</table>
+
+<div class="back">
+<a href="/admin-dashboard">⬅ Back to Dashboard</a>
+</div>
+
+</div>
+
+</body>
+</html>
