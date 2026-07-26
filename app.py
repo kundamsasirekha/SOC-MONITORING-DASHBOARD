@@ -6,6 +6,7 @@ app = Flask(__name__)
 # ---------------- DATABASE ----------------
 
 def create_tables():
+
     conn = sqlite3.connect("soc.db")
     cursor = conn.cursor()
 
@@ -102,8 +103,6 @@ def user_dashboard():
     conn.close()
 
     return render_template("user_dashboard.html", data=data)
-
-
 # ---------------- ADMIN PAGES ----------------
 
 @app.route("/users")
@@ -120,6 +119,9 @@ def logs():
 def alerts():
     return render_template("alerts.html")
 
+@app.route("/system-status")
+def system_status():
+    return render_template("system_status.html")
 
 @app.route("/analytics")
 def analytics():
@@ -174,18 +176,33 @@ def save_profile():
     window.location.href="/profile";
     </script>
     """
+
+
 # ---------------- USER PAGES ----------------
 
 @app.route("/login-history")
 def login_history():
     return render_template("login_history.html")
 
+@app.route("/threat-detection")
+def threat_detection():
+    return render_template("threat_detection.html")
 
-@app.route("/notifications")
-def notifications():
-    return render_template("notification.html")
+@app.route("/employee-list")
+def employee_list():
+    return render_template("employee_list.html")
 
+@app.route("/account-security")
+def account_security():
+    return render_template("account_security.html")
 
+@app.route("/activity-monitoring")
+def activity_monitoring():
+    return render_template("activity_monitoring.html")
+
+@app.route("/download-reports")
+def download_reports():
+    return render_template("download_reports.html")
 # ---------------- CHANGE PASSWORD ----------------
 
 @app.route("/change-password")
@@ -224,10 +241,19 @@ def update_password():
     """
 
 
+# ---------------- NOTIFICATIONS ----------------
+
+@app.route("/notifications")
+def notifications():
+    return render_template("notification.html")
+
+
 # ---------------- LOGOUT ----------------
+
 @app.route("/logout")
 def logout():
     return redirect("/")
+
 
 # ---------------- RUN ----------------
 

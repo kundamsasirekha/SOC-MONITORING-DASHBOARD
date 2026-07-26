@@ -12,316 +12,398 @@
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
 }
 
 body{
-background:#0d1117;
-color:white;
-display:flex;
+    background:#0d1117;
+    color:white;
+    display:flex;
 }
 
 /* Sidebar */
 
 .sidebar{
-width:240px;
-height:100vh;
-background:#161b22;
-position:fixed;
-left:0;
-top:0;
-border-right:2px solid cyan;
+    width:220px;
+    height:100vh;
+    background:#161b22;
+    position:fixed;
+    left:0;
+    top:0;
+    box-shadow:0 0 10px cyan;
 }
 
 .sidebar h2{
-text-align:center;
-padding:25px;
-color:cyan;
-border-bottom:1px solid #333;
+    text-align:center;
+    padding:20px;
+    color:cyan;
+    border-bottom:1px solid #333;
 }
 
 .sidebar a{
-display:block;
-padding:16px 20px;
-text-decoration:none;
-color:white;
-font-size:18px;
-transition:.3s;
+    display:block;
+    padding:15px 20px;
+    color:white;
+    text-decoration:none;
+    font-size:16px;
 }
 
 .sidebar a:hover{
-background:cyan;
-color:black;
+    background:cyan;
+    color:black;
 }
+
 
 /* Main */
 
 .main{
-margin-left:240px;
-width:calc(100% - 240px);
-padding:25px;
+    margin-left:220px;
+    padding:20px;
+    width:100%;
 }
+
+
+/* Header */
 
 .header{
-background:#161b22;
-padding:20px;
-text-align:center;
-font-size:32px;
-color:cyan;
-border-radius:10px;
-box-shadow:0 0 12px cyan;
-margin-bottom:25px;
+    background:#161b22;
+    padding:18px;
+    text-align:center;
+    font-size:28px;
+    color:cyan;
+    border-radius:10px;
+    box-shadow:0 0 10px cyan;
+    margin-bottom:20px;
 }
+
+
+/* Cards */
 
 .cards{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:18px;
-margin-bottom:25px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
 }
+
 
 .card{
-background:#161b22;
-padding:18px;
-text-align:center;
-border-radius:10px;
-box-shadow:0 0 10px cyan;
+    background:#161b22;
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 0 10px cyan;
 }
+
 
 .card h3{
-color:cyan;
-margin-bottom:10px;
+    color:cyan;
+    margin-bottom:10px;
 }
+
 
 .card p{
-font-size:32px;
-font-weight:bold;
+    font-size:25px;
+    font-weight:bold;
 }
+
+
+.status{
+    color:#00ff88;
+}
+
+
+/* Chart */
 
 .chart{
-background:#161b22;
-padding:20px;
-border-radius:10px;
-box-shadow:0 0 10px cyan;
-height:320px;
-margin-bottom:25px;
+    margin-top:25px;
+    background:#161b22;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px cyan;
+    height:300px;
 }
+
+
+/* Table */
 
 table{
-width:100%;
-border-collapse:collapse;
-background:#161b22;
-box-shadow:0 0 10px cyan;
-border-radius:10px;
-overflow:hidden;
+    margin-top:25px;
+    width:100%;
+    border-collapse:collapse;
+    background:#161b22;
+    box-shadow:0 0 10px cyan;
 }
+
 
 th{
-background:cyan;
-color:black;
-padding:12px;
+    background:cyan;
+    color:black;
+    padding:12px;
 }
+
 
 td{
-padding:12px;
-border:1px solid gray;
-text-align:center;
+    padding:12px;
+    text-align:center;
+    border:1px solid #333;
 }
 
-.success{
-color:lightgreen;
-font-weight:bold;
-}
-
-.failed{
-color:red;
-font-weight:bold;
-}
 
 </style>
 
 </head>
 
+
 <body>
+
 
 <div class="sidebar">
 
-<h2>👤 USER PANEL</h2>
+<h2>👤 USER</h2>
 
-<a href="/user-dashboard">🏠 Dashboard</a>
-
-<a href="/profile">👤 My Profile</a>
-
-<a href="/login-history">📜 Login History</a>
-
-<a href="/notifications">🔔 Notifications</a>
-
-<a href="/change-password">⚙️ Change Password</a>
-
+<a href="#">🏠 Dashboard</a>
+<a href="/account-security">🛡️ Account Security</a>
+<a href="/employee-list">👥 Employee List</a>
+<a href="/threat-detection">🚨 Threat Detection</a>
+<a href="/activity-monitoring">📊 Activity Monitoring</a>
+<a href="/download-reports">📄 Download Reports</a>
 <a href="/logout">🚪 Logout</a>
 
 </div>
 
+
+
 <div class="main">
+
 
 <div class="header">
 👤 User Dashboard
 </div>
 
+
+
 <div class="cards">
+
 
 <div class="card">
 <h3>Total Logins</h3>
 <p>15</p>
 </div>
 
+
 <div class="card">
 <h3>Today's Login</h3>
 <p>1</p>
 </div>
 
+
 <div class="card">
-<h3>Notifications</h3>
-<p>2</p>
+<h3>Employees</h3>
+<p>25</p>
 </div>
+
 
 <div class="card">
 <h3>Status</h3>
-<p style="color:lightgreen;">Secure</p>
+<p class="status">Secure</p>
 </div>
 
+
 </div>
+
+
 
 <div class="chart">
 
 <canvas id="loginChart"></canvas>
 
 </div>
+
+
+
+
 <table>
+
 
 <tr>
 <th>Date</th>
 <th>Time</th>
-<th>IP Address</th>
+<th>Activity</th>
 <th>Status</th>
 </tr>
 
+
+<tr>
+<td>26-07-2026</td>
+<td>09:15 AM</td>
+<td>User Login</td>
+<td class="status">Success</td>
+</tr>
+
+
+<tr>
+<td>25-07-2026</td>
+<td>06:40 PM</td>
+<td>Password Changed</td>
+<td class="status">Success</td>
+</tr>
+
+
 <tr>
 <td>24-07-2026</td>
-<td>09:30 AM</td>
-<td>192.168.1.10</td>
-<td class="success">Success</td>
+<td>10:05 AM</td>
+<td>Viewed Employee List</td>
+<td class="status">Completed</td>
 </tr>
+
 
 <tr>
 <td>23-07-2026</td>
-<td>06:20 PM</td>
-<td>192.168.1.25</td>
-<td class="success">Success</td>
+<td>11:20 AM</td>
+<td>Profile Updated</td>
+<td class="status">Completed</td>
 </tr>
+
 
 <tr>
 <td>22-07-2026</td>
-<td>11:15 AM</td>
-<td>192.168.1.50</td>
-<td class="failed">Failed</td>
+<td>08:30 AM</td>
+<td>User Login</td>
+<td class="status">Success</td>
 </tr>
 
-<tr>
-<td>21-07-2026</td>
-<td>08:40 AM</td>
-<td>192.168.1.35</td>
-<td class="success">Success</td>
-</tr>
-
-<tr>
-<td>20-07-2026</td>
-<td>07:15 PM</td>
-<td>192.168.1.90</td>
-<td class="success">Success</td>
-</tr>
-
-<tr>
-<td>19-07-2026</td>
-<td>02:30 PM</td>
-<td>192.168.1.75</td>
-<td class="success">Success</td>
-</tr>
 
 </table>
 
+
 </div>
+
+
 
 <script>
 
-new Chart(document.getElementById("loginChart"),{
 
-type:"line",
+const ctx = document.getElementById('loginChart');
+
+
+new Chart(ctx, {
+
+
+type:'line',
+
 
 data:{
 
-labels:["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],
+
+labels:[
+"Mon",
+"Tue",
+"Wed",
+"Thu",
+"Fri",
+"Sat",
+"Sun"
+],
+
 
 datasets:[{
 
-label:"Weekly Login Activity",
 
-data:[3,5,2,6,4,7,5],
+label:"Login Activity",
+
+
+data:[2,5,3,6,4,7,5],
+
 
 borderColor:"cyan",
 
+
 backgroundColor:"rgba(0,255,255,0.2)",
+
 
 fill:true,
 
+
 tension:0.4,
+
 
 borderWidth:3
 
+
 }]
 
+
 },
+
 
 options:{
 
+
 responsive:true,
+
 
 maintainAspectRatio:false,
 
+
 plugins:{
+
 
 legend:{
 
+
 labels:{
+
+
 color:"white"
-}
+
 
 }
+
+
+}
+
 
 },
+
 
 scales:{
 
+
 x:{
-ticks:{color:"white"}
+
+
+ticks:{color:"white"},
+
+grid:{color:"#333"}
+
 },
 
+
 y:{
-beginAtZero:true,
-ticks:{color:"white"}
-}
+
+
+ticks:{color:"white"},
+
+grid:{color:"#333"}
 
 }
 
+
 }
+
+
+}
+
+
 
 });
 
+
 </script>
 
-</body>
 
+</body>
 </html>

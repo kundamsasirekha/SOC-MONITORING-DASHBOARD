@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Download Reports</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0d1117;
+color:white;
+}
+
+.header{
+background:#161b22;
+padding:20px;
+text-align:center;
+font-size:30px;
+color:cyan;
+box-shadow:0 0 10px cyan;
+}
+
+.container{
+width:80%;
+margin:40px auto;
+}
+
+.report{
+background:#161b22;
+padding:20px;
+margin-bottom:20px;
+border-radius:10px;
+box-shadow:0 0 10px cyan;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.report h3{
+color:cyan;
+margin-bottom:8px;
+}
+
+.report p{
+color:#ccc;
+}
+
+button{
+background:cyan;
+color:black;
+border:none;
+padding:10px 20px;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+font-weight:bold;
+}
+
+button:hover{
+background:#00bcd4;
+}
+
+.back{
+text-align:center;
+margin-top:30px;
+}
+
+.back a{
+background:cyan;
+color:black;
+padding:12px 25px;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+📄 Download Reports
+</div>
+
+<div class="container">
+
+<div class="report">
+
+<div>
+<h3>📜 Login History Report</h3>
+<p>Download your complete login history.</p>
+</div>
+
+<button onclick="alert('Login History Report Downloaded Successfully')">
+Download
+</button>
+
+</div>
+
+<div class="report">
+
+<div>
+<h3>📋 Security Logs Report</h3>
+<p>Download all security logs.</p>
+</div>
+
+<button onclick="alert('Security Logs Report Downloaded Successfully')">
+Download
+</button>
+
+</div>
+
+<div class="report">
+
+<div>
+<h3>🛡️ Account Security Report</h3>
+<p>Download account security summary.</p>
+</div>
+
+<button onclick="alert('Account Security Report Downloaded Successfully')">
+Download
+</button>
+
+</div>
+
+<div class="report">
+
+<div>
+<h3>📊 Monthly Activity Report</h3>
+<p>Download monthly login activity report.</p>
+</div>
+
+<button onclick="alert('Monthly Activity Report Downloaded Successfully')">
+Download
+</button>
+
+</div>
+
+<div class="back">
+<a href="/user-dashboard">⬅ Back to Dashboard</a>
+</div>
+
+</div>
+
+</body>
+
+</html>

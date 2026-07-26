@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Activity Monitoring</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0d1117;
+color:white;
+}
+
+.header{
+background:#161b22;
+padding:20px;
+text-align:center;
+font-size:30px;
+color:cyan;
+box-shadow:0 0 10px cyan;
+}
+
+.container{
+width:90%;
+margin:30px auto;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+margin-bottom:30px;
+}
+
+.card{
+background:#161b22;
+padding:20px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 0 10px cyan;
+}
+
+.card h2{
+color:cyan;
+margin-bottom:10px;
+font-size:18px;
+}
+
+.card p{
+font-size:28px;
+font-weight:bold;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:#161b22;
+}
+
+th{
+background:cyan;
+color:black;
+padding:15px;
+}
+
+td{
+padding:15px;
+border:1px solid gray;
+text-align:center;
+}
+
+.success{
+color:lightgreen;
+font-weight:bold;
+}
+
+.warning{
+color:orange;
+font-weight:bold;
+}
+
+.failed{
+color:red;
+font-weight:bold;
+}
+
+.back{
+text-align:center;
+margin-top:30px;
+}
+
+.back a{
+background:cyan;
+color:black;
+padding:12px 25px;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+📊 Activity Monitoring
+</div>
+
+<div class="container">
+
+<div class="cards">
+
+<div class="card">
+<h2>Total Activities</h2>
+<p>28</p>
+</div>
+
+<div class="card">
+<h2>Successful</h2>
+<p style="color:lightgreen;">24</p>
+</div>
+
+<div class="card">
+<h2>Warnings</h2>
+<p style="color:orange;">3</p>
+</div>
+
+<div class="card">
+<h2>Failed</h2>
+<p style="color:red;">1</p>
+</div>
+
+</div>
+
+<table>
+
+<tr>
+<th>Date</th>
+<th>Time</th>
+<th>Activity</th>
+<th>Device</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>26-07-2026</td>
+<td>09:10 AM</td>
+<td>Login</td>
+<td>Windows Laptop</td>
+<td class="success">Success</td>
+</tr>
+
+<tr>
+<td>26-07-2026</td>
+<td>10:20 AM</td>
+<td>Password Changed</td>
+<td>Windows Laptop</td>
+<td class="success">Completed</td>
+</tr>
+
+<tr>
+<td>26-07-2026</td>
+<td>11:15 AM</td>
+<td>Report Download</td>
+<td>Chrome Browser</td>
+<td class="success">Completed</td>
+</tr>
+
+<tr>
+<td>25-07-2026</td>
+<td>08:40 PM</td>
+<td>Failed Login</td>
+<td>Android Phone</td>
+<td class="failed">Blocked</td>
+</tr>
+
+<tr>
+<td>24-07-2026</td>
+<td>06:00 PM</td>
+<td>Threat Detected</td>
+<td>Windows Laptop</td>
+<td class="warning">Investigating</td>
+</tr>
+
+</table>
+
+<div class="back">
+<a href="/user-dashboard">⬅ Back to Dashboard</a>
+</div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>System Status</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0d1117;
+color:white;
+}
+
+.header{
+background:#161b22;
+padding:20px;
+text-align:center;
+font-size:30px;
+color:cyan;
+box-shadow:0 0 10px cyan;
+}
+
+.container{
+width:90%;
+margin:30px auto;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+margin-bottom:30px;
+}
+
+.card{
+background:#161b22;
+padding:20px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 0 10px cyan;
+}
+
+.card h2{
+color:cyan;
+margin-bottom:10px;
+font-size:18px;
+}
+
+.card p{
+font-size:24px;
+font-weight:bold;
+color:lightgreen;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:#161b22;
+box-shadow:0 0 10px cyan;
+}
+
+th{
+background:cyan;
+color:black;
+padding:15px;
+}
+
+td{
+padding:15px;
+border:1px solid gray;
+text-align:center;
+}
+
+.online{
+color:lightgreen;
+font-weight:bold;
+}
+
+.warning{
+color:orange;
+font-weight:bold;
+}
+
+.back{
+text-align:center;
+margin-top:30px;
+}
+
+.back a{
+background:cyan;
+color:black;
+padding:12px 25px;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+🖥️ System Status
+</div>
+
+<div class="container">
+
+<div class="cards">
+
+<div class="card">
+<h2>Server</h2>
+<p>Online ✅</p>
+</div>
+
+<div class="card">
+<h2>Firewall</h2>
+<p>Active ✅</p>
+</div>
+
+<div class="card">
+<h2>Database</h2>
+<p>Connected ✅</p>
+</div>
+
+<div class="card">
+<h2>Network</h2>
+<p>Stable ✅</p>
+</div>
+
+</div>
+
+<table>
+
+<tr>
+<th>Component</th>
+<th>Status</th>
+<th>Health</th>
+</tr>
+
+<tr>
+<td>Web Server</td>
+<td class="online">Running</td>
+<td>100%</td>
+</tr>
+
+<tr>
+<td>Database</td>
+<td class="online">Connected</td>
+<td>99%</td>
+</tr>
+
+<tr>
+<td>Firewall</td>
+<td class="online">Enabled</td>
+<td>100%</td>
+</tr>
+
+<tr>
+<td>CPU Usage</td>
+<td class="warning">28%</td>
+<td>Good</td>
+</tr>
+
+<tr>
+<td>Memory Usage</td>
+<td class="warning">42%</td>
+<td>Normal</td>
+</tr>
+
+<tr>
+<td>Disk Space</td>
+<td class="online">65% Free</td>
+<td>Healthy</td>
+</tr>
+
+</table>
+
+<div class="back">
+<a href="/admin-dashboard">⬅ Back to Dashboard</a>
+</div>
+
+</div>
+
+</body>
+
+</html>

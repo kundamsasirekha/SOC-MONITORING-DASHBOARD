@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Employee List</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0d1117;
+color:white;
+}
+
+.header{
+background:#161b22;
+padding:20px;
+text-align:center;
+font-size:28px;
+color:cyan;
+box-shadow:0 0 10px cyan;
+}
+
+.container{
+width:90%;
+margin:30px auto;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:#161b22;
+box-shadow:0 0 10px cyan;
+}
+
+th{
+background:cyan;
+color:black;
+padding:15px;
+}
+
+td{
+padding:15px;
+border:1px solid gray;
+text-align:center;
+}
+
+.online{
+color:lightgreen;
+font-weight:bold;
+}
+
+.offline{
+color:red;
+font-weight:bold;
+}
+
+.back{
+text-align:center;
+margin-top:30px;
+}
+
+.back a{
+background:cyan;
+color:black;
+padding:12px 25px;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+👥 Employee List
+</div>
+
+<div class="container">
+
+<table>
+
+<tr>
+<th>Employee ID</th>
+<th>Name</th>
+<th>Department</th>
+<th>Email</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>EMP001</td>
+<td>Sasi Rekha</td>
+<td>Cyber Security</td>
+<td>sasi@company.com</td>
+<td class="online">Online</td>
+</tr>
+
+<tr>
+<td>EMP002</td>
+<td>Rahul</td>
+<td>IT</td>
+<td>rahul@company.com</td>
+<td class="online">Online</td>
+</tr>
+
+<tr>
+<td>EMP003</td>
+<td>Priya</td>
+<td>HR</td>
+<td>priya@company.com</td>
+<td class="offline">Offline</td>
+</tr>
+
+<tr>
+<td>EMP004</td>
+<td>Kiran</td>
+<td>Finance</td>
+<td>kiran@company.com</td>
+<td class="online">Online</td>
+</tr>
+
+<tr>
+<td>EMP005</td>
+<td>Anjali</td>
+<td>Administration</td>
+<td>anjali@company.com</td>
+<td class="online">Online</td>
+</tr>
+
+</table>
+
+<div class="back">
+<a href="/user-dashboard">⬅ Back to Dashboard</a>
+</div>
+
+</div>
+
+</body>
+</html>
