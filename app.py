@@ -45,13 +45,18 @@ def user_login():
 
 # ---------------- ADMIN LOGIN ----------------
 
+# ---------------- ADMIN LOGIN ----------------
+
+ADMIN_USERNAME = "admin"
+ADMIN_PASSWORD = "admin123"
+
 @app.route("/admin-auth", methods=["POST"])
 def admin_auth():
 
     username = request.form.get("username", "").strip()
     password = request.form.get("password", "").strip()
 
-    if username == "admin" and password == "admin123":
+    if username == ADMIN_USERNAME and password == ADMIN_PASSWORD:
         return redirect("/admin-dashboard")
 
     return """
