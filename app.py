@@ -45,8 +45,6 @@ def user_login():
 
 # ---------------- ADMIN LOGIN ----------------
 
-# ---------------- ADMIN LOGIN ----------------
-
 ADMIN_USERNAME = "admin"
 ADMIN_PASSWORD = "admin123"
 
