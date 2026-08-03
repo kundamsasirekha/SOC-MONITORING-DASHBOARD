@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Security Logs</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0d1117;
+color:white;
+}
+
+.header{
+background:#161b22;
+padding:20px;
+text-align:center;
+font-size:28px;
+color:cyan;
+box-shadow:0 0 10px cyan;
+}
+
+.container{
+width:95%;
+margin:30px auto;
+}
+
+h2{
+color:cyan;
+margin-bottom:20px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:#161b22;
+box-shadow:0 0 10px cyan;
+}
+
+th{
+background:cyan;
+color:black;
+padding:14px;
+}
+
+td{
+padding:12px;
+text-align:center;
+border:1px solid gray;
+}
+
+.success{
+color:lightgreen;
+font-weight:bold;
+}
+
+.warning{
+color:orange;
+font-weight:bold;
+}
+
+.danger{
+color:red;
+font-weight:bold;
+}
+
+.back{
+text-align:center;
+margin-top:30px;
+}
+
+.back a{
+background:cyan;
+color:black;
+padding:12px 25px;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+.back a:hover{
+background:#00bcd4;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+📋 Security Logs
+
+</div>
+
+<div class="container">
+
+<h2>Recent Security Events</h2>
+
+<table>
+
+<tr>
+
+<th>Date</th>
+
+<th>Time</th>
+
+<th>User</th>
+
+<th>IP Address</th>
+
+<th>Activity</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>26-07-2026</td>
+
+<td>09:15 AM</td>
+
+<td>admin</td>
+
+<td>192.168.1.10</td>
+
+<td>Admin Login</td>
+
+<td class="success">Success</td>
+
+</tr>
+
+<tr>
+
+<td>26-07-2026</td>
+
+<td>10:25 AM</td>
+
+<td>sasi</td>
+
+<td>192.168.1.25</td>
+
+<td>User Login</td>
+
+<td class="success">Success</td>
+
+</tr>
+
+<tr>
+
+<td>25-07-2026</td>
+
+<td>04:10 PM</td>
+
+<td>Unknown</td>
+
+<td>103.25.45.12</td>
+
+<td>Failed Login Attempt</td>
+
+<td class="danger">Blocked</td>
+
+</tr>
+
+<tr>
+
+<td>25-07-2026</td>
+
+<td>07:35 PM</td>
+
+<td>admin</td>
+
+<td>192.168.1.10</td>
+
+<td>Password Changed</td>
+
+<td class="warning">Updated</td>
+
+</tr>
+
+<tr>
+
+<td>24-07-2026</td>
+
+<td>11:30 AM</td>
+
+<td>sasi</td>
+
+<td>192.168.1.30</td>
+
+<td>Logout</td>
+
+<td class="success">Completed</td>
+
+</tr>
+
+</table>
+
+<div class="back">
+
+<a href="/user-dashboard">⬅ Back to Dashboard</a>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

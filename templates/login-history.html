@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Login History</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0d1117;
+color:white;
+}
+
+.header{
+background:#161b22;
+padding:20px;
+text-align:center;
+font-size:28px;
+color:cyan;
+box-shadow:0 0 10px cyan;
+}
+
+.container{
+width:90%;
+margin:30px auto;
+}
+
+h2{
+margin-bottom:20px;
+color:cyan;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:#161b22;
+box-shadow:0 0 10px cyan;
+}
+
+th{
+background:cyan;
+color:black;
+padding:14px;
+}
+
+td{
+padding:14px;
+text-align:center;
+border:1px solid gray;
+}
+
+.success{
+color:lightgreen;
+font-weight:bold;
+}
+
+.failed{
+color:red;
+font-weight:bold;
+}
+
+.back{
+margin-top:25px;
+text-align:center;
+}
+
+.back a{
+text-decoration:none;
+background:cyan;
+padding:12px 25px;
+color:black;
+border-radius:8px;
+font-weight:bold;
+}
+
+.back a:hover{
+background:#00bcd4;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+📜 Login History
+</div>
+
+<div class="container">
+
+<h2>Recent Login Activity</h2>
+
+<table>
+
+<tr>
+<th>Date</th>
+<th>Time</th>
+<th>IP Address</th>
+<th>Device</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>26-07-2026</td>
+<td>09:15 AM</td>
+<td>192.168.1.10</td>
+<td>Windows Laptop</td>
+<td class="success">Success</td>
+</tr>
+
+<tr>
+<td>25-07-2026</td>
+<td>08:40 PM</td>
+<td>192.168.1.25</td>
+<td>Android Phone</td>
+<td class="success">Success</td>
+</tr>
+
+<tr>
+<td>24-07-2026</td>
+<td>11:20 AM</td>
+<td>192.168.1.50</td>
+<td>Windows Laptop</td>
+<td class="failed">Failed</td>
+</tr>
+
+<tr>
+<td>23-07-2026</td>
+<td>06:45 PM</td>
+<td>192.168.1.80</td>
+<td>Chrome Browser</td>
+<td class="success">Success</td>
+</tr>
+
+<tr>
+<td>22-07-2026</td>
+<td>07:30 AM</td>
+<td>192.168.1.15</td>
+<td>Android Phone</td>
+<td class="success">Success</td>
+</tr>
+
+</table>
+
+<div class="back">
+<a href="/user-dashboard">⬅ Back to Dashboard</a>
+</div>
+
+</div>
+
+</body>
+</html>
